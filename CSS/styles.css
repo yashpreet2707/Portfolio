@@ -14,6 +14,17 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+            /* Preloader  */
+.preloader {
+    position: fixed;
+    top: 0 ; right: 0 ; bottom: 0 ; left: 0 ;
+    z-index: 999999;
+    background-color: #fff ;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s linear;
+}
 
     /* Header section  */
 
@@ -178,7 +189,7 @@ header {
 #aboutme {
     background-color: #ced4da;
     color: #1d3557 ;
-    height: 180vh;
+    height: 130vh;
 }
 
 

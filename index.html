@@ -15,8 +15,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
+    
+    <div class="preloader">
+        <img src="./preloader.gif" alt="preloader">
+    </div>
+
 
     <header>
 
@@ -255,6 +262,19 @@
 
     
     </section>
+
+
+    <script>
+
+        const preloader = document.querySelector(".preloader")
+    
+        window.addEventListener("load", ()=>{
+        preloader.style.zIndex = "-2" ;
+        })
+        
+    </script> 
+    
+
 
 </body>
 </html>
