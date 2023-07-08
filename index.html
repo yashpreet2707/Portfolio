@@ -14,6 +14,11 @@
 </head>
 <body>
 
+    <!-- PRELOADER  -->
+    <div class="preloader">
+        <img src="./assets/preloader.gif" alt="preloader">
+    </div>
+
     <!-- HEADER SECTION  -->
 
     <header>
@@ -54,5 +59,17 @@
         
     </div>
     
+
+    <script>
+
+        const preloader = document.querySelector(".preloader") ;
+
+        window.addEventListener("load", ()=>{
+            preloader.style.zIndex = "-2" ;
+        })
+
+    </script>
+
+
 </body>
 </html>
