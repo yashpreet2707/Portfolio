@@ -461,24 +461,43 @@ header {
 }
 .education .box-container {
     display: flex;
-    flex-direction: column ;
-    flex-wrap: wrap ;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding-top: 30px ;
+    align-items: center ;
+    flex-wrap: wrap ;
 }
 .education .box-container .box {
     height: 18vh ;
     width: 70vw ;
     margin-top: 2vh ;
-    background-color: rgb(133, 140, 156) ;
+    background-color: rgb(133, 140, 156);
     border-radius: 0.5rem ;
+    display: flex;
+    flex-direction: row ;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: 0.2s;
+}
+.education .box-container .box:hover {
+    transform: scale(1.05) ;
+    box-shadow: 10px 20px 30px rgb(0,0,0,0.5) ;
 }
 .education .box-container .box .image {
+    /* background-color: red; */
+    /* height: 100%; */
+    flex: 1 1 20rem ;
+}
+.education .box-container .box .image img {
     width: 220px ;
-    height: 18vh ;
 }
 
+.education .box-container .box .content {
+    padding: 1rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 
 /*++++++++++++++++++++++++++++*/
 /*        SKILL               */
