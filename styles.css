@@ -114,7 +114,7 @@ header {
 /*++++++++++++++++++++++++++++*/
 
 #home {
-    background-image: url("./assets/home-img.jpg");
+    background-image: url("https://images.unsplash.com/photo-1484950763426-56b5bf172dbb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80");
     background-size: cover;
     filter: brightness(60%);
     height: 100vh ;
@@ -234,10 +234,8 @@ header {
 /*++++++++++++++++++++++++++++*/
 
 #about {
-    background-image: url("./assets/about-img.jpg");
-    background-size: cover;
+    background-color: black;
     height: 100vh ;
-    /* filter: brightness(90%); */
 }
 .main-div {
     height: 100vh ;
@@ -266,9 +264,7 @@ header {
     padding-top: 5px ;
 }
 .section-h2-content span {
-    /* color: #2506ad ; */
     color: rgb(193, 123, 50) ;
-    /* color: rgb(155, 17, 63) ; */
     font-size: 2.1rem ;
 }
 
@@ -302,8 +298,6 @@ header {
     height: 55vh ;
     max-width: 40vw ;
     color: #fff ;
-    background-color: rgb(28, 30, 28) ;
-    opacity: 0.6 ;
     border-radius: 2% ;
     padding: 60px 30px 40px 30px ;
 }
@@ -320,7 +314,6 @@ header {
     padding: 1rem 3rem ;
     color: #fff ;
     border-radius: 0.5em ;
-    /* background-color: #2506ad; */
     background-color: rgb(193, 123, 50) ;
     border: 0 ;
     box-shadow: 0px 5px 10px black;
@@ -335,7 +328,6 @@ header {
 
 }
 .resume-button .btn:hover {
-    /* background: #1a047e; */
     background-color: rgb(149, 92, 31) ;
   }
 .resume-button .btn:hover i {
@@ -453,7 +445,7 @@ header {
 /*++++++++++++++++++++++++++++*/
 
 #education {
-    background-image: url("./assets/education-img.jpg");
+    background-image: url("https://images.unsplash.com/photo-1484387281950-dd1de7b0df73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
     background-size: cover ;
     height: 100vh ;
     filter: brightness(90%) ;
@@ -461,6 +453,8 @@ header {
 .fa-h2 {
     font-size: 2rem ;
     margin-right: 5px ;
+    /* color: rgb(193, 123, 50) ; */
+    color: #fff ;
 }
 .education .box-container {
     display: flex;
@@ -562,15 +556,13 @@ header {
 
 
 /*++++++++++++++++++++++++++++*/
-/*        SKILL               */
+/*          SKILL             */
 /*++++++++++++++++++++++++++++*/
 
 
 #skill {
-    background-image: url("./assets/skill-img.jpg");
-    background-size: cover;
+    background-color: #000 ;
     height: 100vh ;
-    filter: brightness(90%);
 }
 
 .skill .box-container  {
@@ -625,7 +617,8 @@ header {
 /*++++++++++++++++++++++++++++*/
 
 #experience {
-    background-image: url("./assets/experience-img.jpg");
+    display: none;
+    /* background-image: url("./assets/experience-img.jpg"); */
     background-size: cover;
     height: 100vh ;
     filter: brightness(90%);
@@ -637,8 +630,7 @@ header {
 /*++++++++++++++++++++++++++++*/
 
 #project {
-    background-image: url("./assets/project-img.jpg");
-    background-size: cover;
+    display: none ;
     height: 100vh ;
     filter: brightness(90%) ;
 }
@@ -648,8 +640,7 @@ header {
 /*++++++++++++++++++++++++++++*/
 
 #contact {
-    background-image: url("./assets/contact-img.jpg");
-    background-size: cover;
+    display: none ;
     height: 100vh ;
     filter: brightness(90%) ;
 }
