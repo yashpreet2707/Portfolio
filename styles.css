@@ -459,6 +459,10 @@ header {
     height: 100vh ;
     filter: brightness(90%) ;
 }
+.fa-h2 {
+    font-size: 2rem ;
+    margin-right: 5px ;
+}
 .education .box-container {
     display: flex;
     flex-direction: column;
@@ -511,11 +515,6 @@ header {
     filter: brightness(90%);
 }
 
-.fa-h2 {
-    height: 50px ;
-    width: 50px ;
-}
-
 .skill-main  {
     min-height: 70vh ;
     margin-top: 3vh ;
@@ -537,12 +536,12 @@ header {
 }
 
 .tech-stack {
-    background-color: #fff ;
-    width: 80px ;
-    height: 80px ;
+    /* background-color: #fff ; */
     margin: 10px 20px 5px 20px ;
 }
-
+.tech-stack img {
+    width: 70px ;
+}
 
 @media (max-width: 700px) {
 
