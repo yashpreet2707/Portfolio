@@ -197,7 +197,7 @@ header {
 
 .socials {
     position: fixed;
-    top: 45% ;
+    top: 50% ;
     z-index: 99;
     display: flex;
     flex-direction: column;

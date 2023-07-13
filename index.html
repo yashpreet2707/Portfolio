@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio | Yashpreet Singh</title>
 
     <!-- font awesome cdn  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -179,9 +179,10 @@
 
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
-    <!-- preloader js  -->
+    <script src="./index.js"></script>
 
     <script>
 
@@ -191,20 +192,26 @@
             preloader.style.display = "none" ;
         })
 
-    </script>
 
-<!-- vanilla tilt js  -->
-<script type="text/javascript" src="./vanilla-tilt.js"></script>
-<script type="text/javascript">
-	VanillaTilt.init(document.querySelector(".yash-img"), {
-		max: 25,
+        document.addEventListener('visibilitychange',
+        function () {
+            if ( document.visibilityState === "visible" ) {
+                document.title = "Portfolio | Yashpreet Singh" ;
+            } 
+            else {
+                document.title = "Come back to Portfolio";
+            }
+        })
+
+
+        // vanilla tilt js 
+    VanillaTilt.init(document.querySelector(".yash-img"), {
+	    max: 25,
 		speed: 400
 	});
+    </script>
 
-	//It also supports NodeList
-	VanillaTilt.init(document.querySelectorAll(".yash-img"));
 
-</script>
 
 </body>
 </html>
