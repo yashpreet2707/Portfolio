@@ -17,6 +17,12 @@ const preloader = document.querySelector(".preloader") ;
             }
     }) ;
 
+$('#menu').click(function () {
+    $(this).toggleClass('fa-times hehe') ;
+}) ;
+
+
+
 
 // vanilla tilt js 
 
@@ -24,3 +30,5 @@ const preloader = document.querySelector(".preloader") ;
 	    max: 25,
 		speed: 400
 	});
+
+

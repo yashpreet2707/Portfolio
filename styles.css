@@ -53,14 +53,31 @@ header {
     text-transform: uppercase;
     font-weight: 700;
 }
+#menu {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #fff ;
+    position: absolute;
+    right: 20px ;
+    display: none;
+}
+.fa-times {
+    transform: rotate(180deg);
+}
 .nav-part{
     width: 60% ;
+}
+.nav-toggle {
+    height: 50vh ;
+}
+.hehe {
+    color: rgb(193, 123, 50) !important;
 }
 .nav-part ul {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    flex-wrap: wrap-reverse;
+    /* flex-wrap: wrap-reverse; */
 }
 .nav-part ul li {
     list-style: none;
@@ -100,7 +117,12 @@ header {
     .nav-part {
         display: none ;
     }
+    #menu {
+        display: block ;
+        position: absolute;
+    }
 }
+
 /* header media queries ends  */
 
 
@@ -181,6 +203,9 @@ header {
     }
 }
 @media (max-width: 500px) {
+    #home {
+        height: 110vh ;
+    }
     .info h2 {
         font-size: 1.2rem;
     }
@@ -197,7 +222,7 @@ header {
 
 .socials {
     position: fixed;
-    top: 50% ;
+    top: 60% ;
     z-index: 99;
     display: flex;
     flex-direction: column;
