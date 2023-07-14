@@ -36,6 +36,9 @@ header {
     position: fixed;
     z-index: 99;
 }
+.header-click {
+    height: 60vh ;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -43,6 +46,12 @@ header {
     background-color: transparent;
     box-shadow: 0 10px 30px #000;
     backdrop-filter: blur(5px) ;
+}
+.navbar-click {
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: none ; */
+    height: 55vh ;
 }
 .navbar h2 {
     padding-bottom: 5px ;
@@ -59,6 +68,7 @@ header {
     color: #fff ;
     position: absolute;
     right: 20px ;
+    top: 30px ;
     display: none;
 }
 .fa-times {
@@ -67,17 +77,21 @@ header {
 .nav-part{
     width: 60% ;
 }
-.nav-toggle {
-    height: 50vh ;
-}
-.hehe {
-    color: rgb(193, 123, 50) !important;
+.hello {
+    display: block !important ;
+
 }
 .nav-part ul {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    /* flex-wrap: wrap-reverse; */
+}
+.nav-ul-click {
+    height: 40vh ;
+    width: 70vw ;
+    flex-direction: column ;
+    justify-content: space-between !important;
+    align-items: center !important ;
 }
 .nav-part ul li {
     list-style: none;
@@ -110,6 +124,7 @@ header {
 
 /* header media queries starts */
 @media (max-width: 1140px ) {
+
     .navbar {
         align-items: flex-end;
         padding: 40px 100px 15px 20px ;

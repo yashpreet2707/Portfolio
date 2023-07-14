@@ -17,8 +17,14 @@ const preloader = document.querySelector(".preloader") ;
             }
     }) ;
 
+
 $('#menu').click(function () {
-    $(this).toggleClass('fa-times hehe') ;
+    $(this).toggleClass('fa-times') ;
+    $(".nav-part").toggleClass('hello') ;
+    $(".header").toggleClass('header-click') ;
+    $(".navbar").toggleClass('navbar-click') ;
+    $(".nav-ul").toggleClass('nav-ul-click') ;
+    $("#navbar-h2").toggle() ;
 }) ;
 
 
