@@ -63,13 +63,14 @@ header {
     font-weight: 700;
 }
 #menu {
+    display: none ;
     font-size: 2.5rem;
     cursor: pointer;
     color: #fff ;
     position: absolute;
     right: 20px ;
     top: 30px ;
-    display: none;
+    position: absolute;
 }
 .fa-times {
     transform: rotate(180deg);
@@ -88,9 +89,9 @@ header {
 }
 .nav-ul-click {
     height: 40vh ;
-    width: 70vw ;
+    width: 60vw ;
     flex-direction: column ;
-    justify-content: space-between !important;
+    justify-content: space-evenly !important;
     align-items: center !important ;
 }
 .nav-part ul li {
@@ -103,7 +104,7 @@ header {
 .underline-animation {
     display: inline-block;
     position: relative;
-    color: rgb(193, 123, 50) ;
+    color: #c17b32 ;
 }
 .underline-animation:after {
     content: '';
@@ -134,7 +135,6 @@ header {
     }
     #menu {
         display: block ;
-        position: absolute;
     }
 }
 
