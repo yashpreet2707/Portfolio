@@ -92,7 +92,7 @@ header {
     width: 60vw ;
     flex-direction: column ;
     justify-content: space-evenly !important;
-    align-items: center !important ;
+    /* align-items: center !important ; */
 }
 .nav-part ul li {
     list-style: none;
