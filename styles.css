@@ -560,7 +560,7 @@ header {
 
 #skill {
     /* background-color: #192841 ; */
-    background-image: url("https://images.unsplash.com/photo-1533134486753-c833f0ed4866?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80") ; 
+    background-image: url("https://images.unsplash.com/photo-1489379391348-c9f07b42b696?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80");
     background-size: cover ;
     height: 100vh ;
 }
@@ -595,7 +595,7 @@ header {
     transform: scale(1.1);
 }
 
-/* education media queries starts */
+/* skill media queries starts */
 @media (max-width: 700px) {
     .tech-stack {
         width: 60px ;
@@ -613,4 +613,37 @@ header {
         transform: none ;
     }
 }
-/* education media queries ends  */
+/* skill media queries ends  */
+
+/*++++++++++++++++++++++++++++*/
+/*          EXPERIENCE         */
+/*++++++++++++++++++++++++++++*/
+
+#experience {
+    /* background-image: url("https://images.unsplash.com/photo-1431440869543-efaf3388c585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"); */
+    background-image: url("https://images.unsplash.com/photo-1498696815880-6fd23346fe56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80");
+    background-size: cover ;
+    height: 100vh ;
+}
+
+/*++++++++++++++++++++++++++++*/
+/*         PROJECT         */
+/*++++++++++++++++++++++++++++*/
+
+#project {
+    background-image: url("https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1834&q=80");
+    background-size: cover ;
+    height: 100vh ;
+}
+
+
+/*++++++++++++++++++++++++++++*/
+/*          CONTACT           */
+/*++++++++++++++++++++++++++++*/
+
+#contact {
+    background-image: url("https://images.unsplash.com/photo-1502657877623-f66bf489d236?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80");
+    background-size: cover ;
+    height: 100vh ;
+}
+
