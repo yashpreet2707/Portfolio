@@ -559,7 +559,7 @@ header {
 
 
 #skill {
-    /* background-color: #192841 ; */
+    /* background-image: url("https://images.unsplash.com/photo-1431440869543-efaf3388c585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"); */
     background-image: url("https://images.unsplash.com/photo-1489379391348-c9f07b42b696?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80");
     background-size: cover ;
     height: 100vh ;
@@ -611,6 +611,11 @@ header {
     }
     .tech-stack img:hover {
         transform: none ;
+    }
+}
+@media (max-width: 412px) and (max-height: 915px) {
+    #skill .main-div {
+        height: 100vh ;
     }
 }
 /* skill media queries ends  */
