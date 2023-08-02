@@ -681,9 +681,36 @@ header {
     justify-content: center ;
 }
 .cta .container-cta {
-    height: 30vh ;
+    height: 40vh ;
     width: 70vw ;
     border-radius: 10px ;
-    margin-top: 5vh ;
-    background-color: rgb(85, 73, 73) ;
+    margin-top: 10vh ;
+    /* background-color: rgb(85, 73, 73) ; */
+    border: 1px solid #fff ;
+    padding: 8vh 2vw ;
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff ;
+}
+.container-cta .cta-content {
+
+}
+.container-cta .cta-content h2 {
+
+}
+.container-cta .cta-content h3 {
+
+}
+.container-cta .cta-content span {
+    color:#c17b32 ;
+}
+.container-cta .cta-img img {
+    width: 250px ;
+    border-radius: 10px ;
+    border: 1px solid #fff ;
+    /* transition: 0.2s ease ; */
+}
+.container-cta .cta-img img:hover {
+    /* border: 1px solid #c17b32 ; */
+    transform: scale(1.1);
 }
