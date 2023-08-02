@@ -651,4 +651,21 @@ header {
     background-size: cover ;
     height: 100vh ;
 }
+.container {
+    margin-top: 12vh ;
+    width: 90vw ;
+    margin-left: 5vw ;
+    height: 60vh ;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.container .contact-gif img {
+    width: 500px ;
+    opacity: 0.8 ;
+    border-radius: 10px ;
+}
 
+.container .contact-form {
+    width: 500px ;
+}
