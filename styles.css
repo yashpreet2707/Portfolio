@@ -694,17 +694,20 @@ header {
     justify-content: space-evenly;
     color: #fff ;
 }
-.container-cta .cta-content {
-
-}
 .container-cta .cta-content h2 {
-
+    font-size: 2.2rem ;
 }
 .container-cta .cta-content h3 {
-
+    margin-top: 10px ;
+    font-size: 1.3rem ;
+    font-weight: 300;
 }
 .container-cta .cta-content span {
     color:#c17b32 ;
+    font-weight: bold ;
+}
+.container-cta .cta-content p {
+    margin-top: 30px ;
 }
 .container-cta .cta-img img {
     width: 250px ;
@@ -715,4 +718,25 @@ header {
 .container-cta .cta-img img:hover {
     /* border: 1px solid #c17b32 ; */
     transform: scale(1.1);
+}
+.cta-button {
+    margin-top: 20px ;
+    padding: 10px 20px ;
+    border-radius: 10px ;
+    border: none ;
+    cursor: pointer ;
+}
+.cta-button i {
+    font-size: 1rem ;
+}
+.cta-content button {
+    font-size: 0.9rem ;
+}
+.cta-content a {
+    text-decoration: none ;
+    color: #000 ;
+    font-size: 1rem ;
+}
+.cta-button:hover {
+    transform: scale(1.15) ;
 }
