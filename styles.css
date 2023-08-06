@@ -324,9 +324,6 @@ header {
     transition: 0.3s;
     cursor: pointer;
 }
-.yash-img:hover {
-    filter: grayscale(20%);
-}
 .about-content  {
     height: 55vh ;
     max-width: 40vw ;
