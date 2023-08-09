@@ -669,6 +669,11 @@ header {
     width: 500px ;
 }
 
+@media (max-width: 630px ) {
+    .contact .main-div {
+        height: 100vh ;
+    }
+}
 /*++++++++++++++++++++++++++++*/
 /*           CTA              */
 /*++++++++++++++++++++++++++++*/
@@ -691,6 +696,9 @@ header {
     justify-content: space-evenly;
     color: #fff ;
 }
+.container-cta .cta-content {
+    max-width: 65vw ;
+}
 .container-cta .cta-content h2 {
     font-size: 2.2rem ;
 }
@@ -707,10 +715,9 @@ header {
     margin-top: 30px ;
 }
 .container-cta .cta-img img {
-    width: 250px ;
+    width: 300px ;
     border-radius: 10px ;
     border: 1px solid #fff ;
-    /* transition: 0.2s ease ; */
 }
 .container-cta .cta-img img:hover {
     /* border: 1px solid #c17b32 ; */
@@ -736,4 +743,29 @@ header {
 }
 .cta-button:hover {
     transform: scale(1.15) ;
+}
+@media (max-width: 1050px) {
+    .container-cta .cta-content h2 {
+        font-size: 2rem;
+    }
+    .container-cta .cta-content h3 {
+        font-size: 1rem ;
+    }
+    .container-cta .cta-content p {
+        font-size: 14px ;
+    }
+}   
+/* @media (max-width: 950px) {
+    .container-cta .cta-img img {
+        width: 250px ;
+    }
+} */
+@media (max-width:830px) {
+    .container-cta .cta-img img {
+        display: none ;
+    }
+    .cta .container-cta {
+        width: 80vh ;
+        border: none ;
+    }
 }
