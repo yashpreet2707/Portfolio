@@ -314,10 +314,10 @@ header {
     padding: 2rem ;
   }
 .yash-img {
-    height: 400px ;
-    width: 300px ;
+    /* height: 400px ;
+    width: 300px ; */
     /* hehe it's temporary <FLOOD> */
-    border: 2px solid #000 ;
+    border: 5px solid transparent;
     border-radius: 5%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
     filter: grayscale(0);
