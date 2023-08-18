@@ -659,15 +659,53 @@ header {
     justify-content: center;
     /* align-items: center; */
 }
-.container .contact-gif img {
-    width: 500px ;
+.container .contact-img img {
+    width: 300px ;
     opacity: 0.8 ;
     border-radius: 10px ;
 }
 
 .container .contact-form {
     width: 500px ;
+    padding-left: 60px ;
 }
+.form-part .message {
+    margin-left: -20px ;
+}
+.form-part .field , .message {
+    margin-top: 20px ;
+}
+.form-part input {
+    width: 330px ;
+    padding: 10px 30px ;
+    border-radius: 5px ;
+    border: none ;
+    outline: none ;
+}
+.form-part textarea {
+    padding: 10px 0 0 30px ;
+    border-radius: 5px;
+    border: none ;
+    outline: none ;
+}
+.form-part i {
+    position: relative;
+    left: -325px ;
+}
+.form-part .message i {
+    position: relative;
+    top: -50px ;
+    left: 30px ;
+}
+.form-button {
+    margin-top: 20px ;
+}
+.form-button button {
+    padding: 5px 10px ;
+    border-radius: 5px ;
+    border: none ;
+}
+
 
 @media (max-width: 630px ) {
     .contact .main-div {
