@@ -387,6 +387,9 @@ header {
         height: 320px ;
         width: 240px ;
     }
+    .about-content p {
+        text-align: center ;
+    }
 }
 @media (max-width:500px) {
     .lord-icon-h2 {
