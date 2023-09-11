@@ -1,3 +1,4 @@
+
 // preloader 
 
 // const preloader = document.querySelector(".preloader") ;
@@ -5,6 +6,7 @@
 //         preloader.style.display = "none" ;
 //     })
 
+    
 // title change 
 
 document.addEventListener('visibilitychange',
@@ -36,5 +38,4 @@ VanillaTilt.init(document.querySelector(".yash-img"), {
     max: 25,
     speed: 400
 });
-
 

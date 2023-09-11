@@ -680,10 +680,8 @@ header {
     width: 600px ;
     padding-left: 60px ;
 }
-.form-part .message {
-    margin-left: -20px ;
-}
-.form-part .field , .message {
+
+.form-part .field{
     margin-top: 20px ;
 }
 .form-part input {
@@ -693,30 +691,23 @@ header {
     border: none ;
     outline: none ;
 }
-.form-part textarea {
-    padding: 10px 0 0 30px ;
-    border-radius: 5px;
-    border: none ;
-    outline: none ;
-}
 .form-part i {
     position: relative;
     left: -325px ;
 }
-.form-part .message i {
-    position: relative;
-    top: -50px ;
-    left: 30px ;
+.field .message {
+    height: 40px ;
 }
+
 .form-button {
     margin-top: 20px ;
 }
-.form-button button {
+.form-button input {
     padding: 5px 10px ;
     border-radius: 5px ;
     border: none ;
 }
-.form-button button:hover {
+.form-button input:hover {
     transform: scale(1.15) ;
 }
 @media (max-width: 893px) {
