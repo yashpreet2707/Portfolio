@@ -670,59 +670,63 @@ header {
     align-items: center;
 }
 .container .contact-img img {
-    width: 350px ;
+    /* width: 350px ; */
     border-radius: 10px ;
     opacity: 0.9 ;
     margin-right: 5vw ;
 }
 
 .container .contact-form {
-    width: 600px ;
-    padding-left: 60px ;
+    height: 40vh ;
+    width: 40vw ;
+    padding-left: 5vw ;
+    display: flex;
 }
-
-.form-part .field{
-    margin-top: 20px ;
+.contact-form form div {
+    margin-bottom: 25px ;
 }
-.form-part input {
-    width: 330px ;
-    padding: 10px 30px ;
-    border-radius: 5px ;
+.contact-form form div input {
+    width: 300px ;
+    padding: 8px 10px 8px 35px ;
     border: none ;
-    outline: none ;
+    border-radius: 2px ;
 }
-.form-part i {
+.contact-form form .text-area textarea {
+    width: 300px ;
+    padding-top: 10px ;
+    padding-left: 35px ;
+}
+.contact-form form .text-area {
+    margin-bottom: 10px ;
+}
+.contact-form form div i {
     position: relative;
-    left: -325px ;
+    left: -295px ;
 }
-.field .message {
-    height: 40px ;
+.contact-form form .text-area i {
+    position: relative ;
+    left: -295px ;
+    top: -50px ;
+
+}
+/* .contact-form form .submit-input {
+    margin-top: 10px ;
+} */
+.contact-form form .submit-input input {
+    width: 105px ;
+    padding: 10px 40px 10px 10px ;
+    font-size: 1rem ;
+}
+.contact-form form .submit-input i {
+    left: -40px ;
 }
 
-.form-button {
-    margin-top: 20px ;
-}
-.form-button input {
-    padding: 5px 10px ;
-    border-radius: 5px ;
-    border: none ;
-}
-.form-button input:hover {
-    transform: scale(1.15) ;
-}
 @media (max-width: 893px) {
-    .form-part i {
-        left: 5px;
-        top: -25px;
-    }
+    
 }
 @media (max-width: 875px) {
     .contact-img {
         display: none ;
-    }
-    .form-part i {
-    left: -325px ;
-    top: 0 ;
     }
 }
 @media (max-width: 630px ) {
@@ -737,15 +741,7 @@ header {
     }
 }
 @media (max-width: 430px) {
-    .form-part input {
-        width: 250px ;
-    }
-    .form-part i {
-        left: -245px ;
-    }
-    .form-part .message textarea {
-        width: 250px ;
-    }
+    
 }
 /*++++++++++++++++++++++++++++*/
 /*           CTA              */
