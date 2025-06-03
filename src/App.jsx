@@ -2,11 +2,17 @@ import React from 'react'
 import MyDock from './MyComponents/MyDock'
 import Footer from './MyComponents/Footer'
 import Header from './MyComponents/Header'
+import Hero from './MyComponents/Hero'
+import About from './MyComponents/About'
+import Experience from './MyComponents/Experience'
+import { ScrollProgress } from './components/magicui/scroll-progress'
 
 const App = () => {
   return (
     <>
       <Header />
+      <ScrollProgress className='top-16' />
+      <Hero />
       <Footer />
       <div className='fixed bottom-4 left-1/2 transform -translate-x-1/2 '><MyDock /></div>
     </>

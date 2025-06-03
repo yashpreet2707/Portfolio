@@ -4,12 +4,15 @@ import React from 'react'
 import { Dock, DockIcon } from '@/components/magicui/dock';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { cn } from '@/lib/utils';
-import { buttonVariants } from '@/components/ui/button';
+import { Button, buttonVariants } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import { ModeToggle } from '@/utils/ModeToggle';
 
 const MyDock = () => {
-
+    const scrollToSection = (sectionId) => {
+        document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+        setIsMenuOpen(false);
+    };
 
     const Icons = {
         email: (IconProps) => <MailIcon />,
@@ -43,7 +46,7 @@ const MyDock = () => {
 
     const DATA = {
         navbar: [
-            { href: "#", icon: HomeIcon, label: "Home" },
+            { href: "home", icon: HomeIcon, label: "Home" },
         ],
         contact: {
             social: {
@@ -80,16 +83,18 @@ const MyDock = () => {
                         <DockIcon key={item.label}>
                             <Tooltip>
                                 <TooltipTrigger asChild>
-                                    <a
+                                    <Button
+                                        onClick={() => scrollToSection('home')}
+                                        variant='ghost'
                                         href={item.href}
                                         aria-label={item.label}
                                         className={cn(
                                             buttonVariants({ variant: "ghost", size: "icon" }),
-                                            "size-12 rounded-full",
+                                            "size-12 rounded-full cursor-pointer",
                                         )}
                                     >
                                         <item.icon className="size-4" />
-                                    </a>
+                                    </Button>
                                 </TooltipTrigger>
                                 <TooltipContent>
                                     <p>{item.label}</p>
