@@ -1,9 +1,10 @@
 import React from 'react'
+import MyDock from './MyComponents/MyDock'
 
 const App = () => {
   return (
-    <div className='flex justify-around text-5xl font-bold my-10'>
-      App
+    <div className='h-screen w-screen'>
+      <MyDock />
     </div>
   )
 }
