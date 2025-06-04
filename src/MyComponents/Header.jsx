@@ -44,7 +44,7 @@ const Header = () => {
                         </Button>
                         <MagicCard className='rounded-md'>
                             <Button variant='ghost' className='relative cursor-pointer rounded-md'>
-                                Resume
+                                <a href="https://drive.google.com/file/d/1kSGcVT-cnQ81dVDCMXXxo8n4D78w6zws/view?usp=drive_link" target="__blacnk">Resume</a>
                             </Button>
                         </MagicCard>
                     </div>

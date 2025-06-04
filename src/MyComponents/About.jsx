@@ -1,14 +1,6 @@
 import { Code, Database, Globe, User } from 'lucide-react'
 import React from 'react'
-import {
-    Card,
-    CardAction,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card"
+import { Card, CardContent, } from "@/components/ui/card"
 import { Badge } from '@/components/ui/badge';
 
 const About = () => {
@@ -32,7 +24,7 @@ const About = () => {
     ]
 
     return (
-        <section id='about' className='py-16'>
+        <section id='about' className='py-16 relative'>
             <div className='max-w-7xl mx-auto'>
                 <div className='text-center mb-12 mt-5'>
                     <h2 className='flex justify-center items-center text-3xl md:text-4xl font-bold mb-4'><User style={{ width: "2rem", height: '2rem' }} className='mr-4' />About Me</h2>
@@ -76,8 +68,8 @@ const About = () => {
                                             <h4 className='font-semibold text-lg'>{skill.category}</h4>
                                         </div>
                                         <div className='flex flex-wrap gap-2'>
-                                            {skill.items.map((item) => (
-                                                <Badge variant='secondary' className='text-xs'>
+                                            {skill.items.map((item, index) => (
+                                                <Badge key={index} variant='secondary' className='text-xs'>
                                                     {item}
                                                 </Badge>
                                             ))}

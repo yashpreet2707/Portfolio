@@ -1,15 +1,34 @@
+
+import { Particles } from '@/components/magicui/particles'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
+import { useTheme } from '@/utils/darkThemeProvider'
 import { Cloud, Code, Code2, MessageSquareCode } from 'lucide-react'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Hero = () => {
     const scrollToSection = (sectionId) => {
         document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
         setIsMenuOpen(false);
     };
+
+    const { resolvedTheme } = useTheme()
+
+    const [color, setColor] = useState("#ffffff");
+
+    useEffect(() => {
+        setColor(resolvedTheme === "dark" ? "#ffffff" : "#000000");
+    }, [resolvedTheme]);
+
     return (
         <section id='home' className='py-16'>
+            <Particles
+                className="absolute inset-0 z-0"
+                quantity={200}
+                ease={80}
+                color={color}
+                refresh
+            />
             <div className='max-w-7xl mx-auto'>
                 <div className='text-center py-20'>
                     <span className='text-sm border py-1 px-4 rounded-full bg-blue-400 text-white font-semibold'>Available for opportunities</span>
