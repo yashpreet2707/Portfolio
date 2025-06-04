@@ -4,8 +4,9 @@ import Footer from './MyComponents/Footer'
 import Header from './MyComponents/Header'
 import Hero from './MyComponents/Hero'
 import About from './MyComponents/About'
-import Experience from './MyComponents/Experience'
 import { ScrollProgress } from './components/magicui/scroll-progress'
+import Experience from './MyComponents/Experience'
+import Projects from './MyComponents/Projects'
 
 const App = () => {
   return (
@@ -13,6 +14,9 @@ const App = () => {
       <Header />
       <ScrollProgress className='top-16' />
       <Hero />
+      <About />
+      {/* <Experience/> */}
+      <Projects />
       <Footer />
       <div className='fixed bottom-4 left-1/2 transform -translate-x-1/2 '><MyDock /></div>
     </>

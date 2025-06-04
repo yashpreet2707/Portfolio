@@ -30,9 +30,9 @@ const Header = () => {
                         <Button variant='ghost' onClick={() => scrollToSection("about")} className='px-4 py-2 text-slate-600 dark:text-slate-200 cursor-pointer'>
                             About
                         </Button>
-                        <Button variant='ghost' onClick={() => scrollToSection("experience")} className='px-4 py-2 text-slate-600 dark:text-slate-200 cursor-pointer'>
+                        {/* <Button variant='ghost' onClick={() => scrollToSection("experience")} className='px-4 py-2 text-slate-600 dark:text-slate-200 cursor-pointer'>
                             Experience
-                        </Button>
+                        </Button> */}
                         <Button variant='ghost' onClick={() => scrollToSection("projects")} className='px-4 py-2 text-slate-600 dark:text-slate-200 cursor-pointer'>
                             Projects
                         </Button>
@@ -66,9 +66,9 @@ const Header = () => {
                             <Button variant='secondary' onClick={() => scrollToSection("about")} className='text-left px-4 py-2 cursor-pointer'>
                                 About
                             </Button>
-                            <Button variant='secondary' onClick={() => scrollToSection("experience")} className='text-left px-4 py-2 cursor-pointer'>
+                            {/* <Button variant='secondary' onClick={() => scrollToSection("experience")} className='text-left px-4 py-2 cursor-pointer'>
                                 Experience
-                            </Button>
+                            </Button> */}
                             <Button variant='secondary' onClick={() => scrollToSection("projects")} className='text-left px-4 py-2 cursor-pointer'>
                                 Projects
                             </Button>
