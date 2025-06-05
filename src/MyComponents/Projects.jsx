@@ -11,7 +11,7 @@ import {
 import { ShineBorder } from '@/components/magicui/shine-border'
 import { useTheme } from '@/utils/darkThemeProvider'
 import { Button } from '@/components/ui/button'
-import { ExternalLink, Github } from 'lucide-react'
+import { ExternalLink, FolderOpen, Github } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 
 const Projects = () => {
@@ -57,7 +57,7 @@ const Projects = () => {
         <section id='projects' className='py-16'>
             <div className='max-w-7xl mx-auto'>
                 <div className='text-center mb-12 mt-5'>
-                    <h2 className='mb-4 text-3xl md:text-4xl font-bold'>My Projects</h2>
+                    <h2 className='flex justify-center items-center mb-4 text-3xl md:text-4xl font-bold'><FolderOpen style={{ width: "2rem", height: '2rem' }} className='mr-4' />My Projects</h2>
                     <p className='px-4 mb-4 text-slate-600 dark:text-slate-200/80 text-sm sm:text-lg md:text-xl'>Here are some of my recent projects that showcase my skills in full-stack development</p>
                 </div>
 

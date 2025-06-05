@@ -34,16 +34,18 @@ const About = () => {
                 <div className='grid md:grid-cols-2 gap-12 items-center'>
                     <div className='p-4'>
                         <h3 className='text-2xl mb-4 font-semibold'>Learn More About Me</h3>
-                        <p className='mb-4'>I'm currently in my pre-final year of Computer Science Engineering, where I've developed a strong foundation in programming, algorithms, and system design. My passion lies in full-stack web development and cloud computing.
-                        </p>
-                        <p className='mb-4 '>
-                            I enjoy solving complex problems and building applications that make a difference. Also, I love to  explore new technologies, contributing to open-source projects, or writing technical blogs.
-                        </p>
-                        <p className='mb-5'>
-                            When the screens go dark, you&apos;ll find me grooving to music 🎧, binge-watching movies and web series 🍿, or smashing birdies on the badminton court 🏸.
-                            <br />
-                            <span>Let&apos;s connect, create, and collaborate! 😊</span>
-                        </p>
+                        <div className='text-slate-600 dark:text-slate-200/80 '>
+                            <p className='mb-4'>I'm currently in my pre-final year of Computer Science Engineering, where I've developed a strong foundation in programming, algorithms, and system design. My passion lies in full-stack web development and cloud computing.
+                            </p>
+                            <p className='mb-4 '>
+                                I enjoy solving complex problems and building applications that make a difference. Also, I love to  explore new technologies, contributing to open-source projects, or writing technical blogs.
+                            </p>
+                            <p className='mb-5'>
+                                When the screens go dark, you&apos;ll find me grooving to music 🎧, binge-watching movies and web series 🍿, or smashing birdies on the badminton court 🏸.
+                                <br />
+                                <span>Let&apos;s connect, create, and collaborate! 😊</span>
+                            </p>
+                        </div>
 
                         <div className='grid grid-cols-2 gap-6 mr-5'>
                             <div className="text-center p-2 rounded-lg outline">

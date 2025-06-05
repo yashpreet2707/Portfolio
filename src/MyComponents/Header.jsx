@@ -1,5 +1,7 @@
-import { MagicCard } from '@/components/magicui/magic-card'
+
+import { ShineBorder } from '@/components/magicui/shine-border'
 import { Button } from '@/components/ui/button'
+import { useTheme } from '@/utils/darkThemeProvider'
 import { Menu, X } from 'lucide-react'
 import React, { useState } from 'react'
 
@@ -11,6 +13,8 @@ const Header = () => {
         document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
         setIsMenuOpen(false);
     };
+
+    const { resolvedTheme } = useTheme();
 
 
     return (
@@ -42,11 +46,10 @@ const Header = () => {
                         <Button variant='ghost' onClick={() => scrollToSection("contact")} className='px-4 py-2 text-slate-600 dark:text-slate-200 cursor-pointer'>
                             Contact
                         </Button>
-                        <MagicCard className='rounded-md'>
-                            <Button variant='ghost' className='relative cursor-pointer rounded-md'>
-                                <a href="https://drive.google.com/file/d/1kSGcVT-cnQ81dVDCMXXxo8n4D78w6zws/view?usp=drive_link" target="__blacnk">Resume</a>
-                            </Button>
-                        </MagicCard>
+                        <Button variant='secondary' className='relative cursor-pointer rounded-md'>
+                            <ShineBorder shineColor={resolvedTheme === "dark" ? "white" : "black"} borderWidth={2} />
+                            <a href="https://drive.google.com/file/d/1kSGcVT-cnQ81dVDCMXXxo8n4D78w6zws/view?usp=drive_link" target="__blacnk">Resume</a>
+                        </Button>
                     </div>
                     {/* mobile view button  */}
                     <div className='md:hidden'>
