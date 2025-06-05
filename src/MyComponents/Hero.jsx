@@ -3,7 +3,7 @@ import { Particles } from '@/components/magicui/particles'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { useTheme } from '@/utils/darkThemeProvider'
-import { Cloud, Code, Code2, MessageSquareCode } from 'lucide-react'
+import { Cloud, Code2, MessageSquareCode } from 'lucide-react'
 import React, { useEffect, useState } from 'react'
 
 const Hero = () => {
@@ -23,7 +23,7 @@ const Hero = () => {
     return (
         <section id='home' className='py-16'>
             <Particles
-                className="absolute inset-0 z-0"
+                className="absolute inset-0 -z-50"
                 quantity={200}
                 ease={80}
                 color={color}
