@@ -33,13 +33,13 @@ const Hero = () => {
                 <div className='text-center py-20'>
                     <div className='flex flex-col items-center'>
                         <img className='w-22' src='./images/emojiSpecs.png' alt='emoji' />
-                        <Button variant='primary' className='text-sm border py-1 px-4 font-semibold -mt-1'><span className='animate-pulse'>🟢</span>Available for new projects</Button>
+                        <Button variant='primary' className='text-sm border py-1 px-4 font-semibold'><span className='animate-pulse'>🟢</span>Available for new projects</Button>
                     </div>
                     <h1 className='text-4xl md:text-6xl font-bold my-6'>Hi I'm <span className='bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text '>Yashpreet Singh</span></h1>
                     <p className="text-xl text-slate-600 dark:text-slate-200/80 md:text-2xl mb-6">
                         Pre-Final Year CS Student & Full Stack Developer
                     </p>
-                    <p className="text-lg text-slate-600 dark:text-slate-200/80 max-w-2xl mx-auto mb-8">
+                    <p className="text-lg text-slate-600 dark:text-slate-200/80 max-w-2xl mx-auto mb-8 px-2">
                         Passionate about building scalable, high-performance web applications and exploring cloud technologies. Currently pursuing
                         Computer Science with a focus on modern development practices.
                     </p>
