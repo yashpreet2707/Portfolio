@@ -1,5 +1,4 @@
-
-import { Particles } from '@/components/magicui/particles'
+import { RetroGrid } from '@/components/magicui/retro-grid'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { useTheme } from '@/utils/darkThemeProvider'
@@ -22,14 +21,10 @@ const Hero = () => {
 
     return (
         <section id='home' className='py-16'>
-            <Particles
-                className="absolute inset-0 -z-50"
-                quantity={200}
-                ease={80}
-                color={color}
-                refresh
-            />
-            <div className='max-w-7xl mx-auto'>
+            <div className="absolute h-[900px] sm:h-[700px] w-full overflow-hidden">
+                <RetroGrid />
+            </div>
+            <div className='max-w-7xl mx-auto relative'>
                 <div className='text-center py-20'>
                     <span className='text-sm border py-1 px-4 rounded-full bg-blue-400 text-white font-semibold'>Available for opportunities</span>
                     <h1 className='text-4xl md:text-6xl font-bold my-6'>Hi I'm <span className='bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text '>Yashpreet Singh</span></h1>
