@@ -50,7 +50,7 @@ const Projects = () => {
             technologies: ['React', 'Express.js', 'Node.js', 'Tailwind CSS', 'Redux Toolkit'],
             github: 'https://github.com/yashpreet2707/RestaurantApp',
             live: 'https://restaurant-a08wcufmv-yashpreet2707s-projects.vercel.app/',
-            featured: false,
+            featured: true,
         }
     ]
     return (
@@ -63,12 +63,12 @@ const Projects = () => {
 
                 <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3 px-4'>
                     {projects.map((project) => (
-                        <Card key={project.title} className='relative rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300'>
+                        <Card key={project.title} className='group overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 backdrop-blur-sm border-0 shadow-lg'>
                             {project.featured && (
                                 <ShineBorder shineColor={resolvedTheme === "dark" ? "green" : "black"} borderWidth={2} />
                             )}
                             <CardHeader>
-                                <CardTitle>{project.title}</CardTitle>
+                                <CardTitle className='text-xl group-hover:text-green-600 transition-colors duration-300 leading-tight'>{project.title}</CardTitle>
                                 <CardDescription className='text-sm'>{project.description}</CardDescription>
                                 <CardAction>
                                     <Button variant='ghost' size='icon'>
@@ -84,7 +84,7 @@ const Projects = () => {
                                 </CardAction>
                             </CardHeader>
                             <CardContent className='relative w-full'>
-                                <img className="rounded-md w-full h-auto object-contain" src={project.image} alt={project.alt} loading="lazy" />
+                                <img className="rounded-md w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105" src={project.image} alt={project.alt} loading="lazy" />
 
                             </CardContent>
                             <CardFooter className='overflow-x-scroll scrollbar-hide gap-1 mr-5'>

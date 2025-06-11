@@ -87,15 +87,17 @@ const Blogs = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <CardTitle className='text-xl font-bold group-hover:text-blue-600 transition-colors duration-300 leading-tight'>
+                                <CardTitle className='text-xl font-bold group-hover:text-green-600 transition-colors duration-300 leading-tight'>
                                     {blog.title}
                                 </CardTitle>
                             </CardHeader>
                             <CardContent className='pt-0'>
                                 <p className='text-gray-600 mb-6 leading-relaxed'>{blog.description}</p>
-                                <Button variant='ghost' className='p-0 h-auto text-blue-500 hover:text-blue-600 group/button font-semibold'>
-                                    Read Full Article
-                                    <ArrowRight className='ml-2 h-4 w-4 group-hover/button:translate-x-1 transition-transform duration-300' />
+                                <Button variant='ghost' className='p-0 h-auto hover:text-green-600 group/button font-semibold'>
+                                    <a href={blog.link} target="__blank" className="flex items-center">
+                                        Read Full Article
+                                        <ArrowRight className='ml-2 h-4 w-4 group-hover/button:translate-x-1 transition-transform duration-300' />
+                                    </a>
                                 </Button>
                             </CardContent>
                         </Card>

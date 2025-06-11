@@ -46,8 +46,8 @@ const Header = () => {
                         <Button variant='ghost' onClick={() => scrollToSection("contact")} className='px-4 py-2 text-slate-600 dark:text-slate-200 cursor-pointer'>
                             Contact
                         </Button>
-                        <Button variant='secondary' className='relative cursor-pointer rounded-md'>
-                            <ShineBorder shineColor={resolvedTheme === "dark" ? "white" : "black"} borderWidth={2} />
+                        <Button variant='ghost' className='relative cursor-pointer rounded-md'>
+                            <ShineBorder shineColor={'green'} borderWidth={1} />
                             <a href="https://drive.google.com/file/d/1kSGcVT-cnQ81dVDCMXXxo8n4D78w6zws/view?usp=drive_link" target="__blacnk">Resume</a>
                         </Button>
                     </div>
@@ -81,6 +81,10 @@ const Header = () => {
                             <Button variant='secondary' onClick={() => scrollToSection("contact")} className='text-left px-4 py-2 cursor-pointer'>
                                 Contact
                             </Button>
+                            {/* <Button variant='secondary' className='relative text-left px-4 py-2 cursor-pointer'>
+                                <ShineBorder shineColor={resolvedTheme === "dark" ? "white" : "black"} borderWidth={2} />
+                                <a href="https://drive.google.com/file/d/1kSGcVT-cnQ81dVDCMXXxo8n4D78w6zws/view?usp=drive_link" target="__blacnk">Resume</a>
+                            </Button> */}
                         </div>
                     </div>
                 )}
