@@ -58,7 +58,9 @@ const Hero = () => {
                         </Badge> */}
                     </div>
                     <div className='flex justify-center space-x-4'>
-                        <Button onClick={() => scrollToSection('projects')} className='cursor-pointer bg-green-600 hover:bg-green-700'>View My Work</Button>
+                        <Button onClick={() => scrollToSection('projects')} className='cursor-pointer bg-green-600 hover:bg-green-700'>
+                            <a href="https://drive.google.com/file/d/1HLhkLIQppSwyg0v70O6hTMaNAaHGDfue/view?usp=drive_link" target='__blank'>My Resume</a>
+                        </Button>
                         <Button onClick={() => scrollToSection('contact')} className='cursor-pointer'>Get In Touch</Button>
                     </div>
                 </div>
