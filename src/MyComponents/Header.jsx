@@ -48,7 +48,7 @@ const Header = () => {
                         </Button>
                         <Button variant='ghost' className='relative cursor-pointer rounded-md'>
                             <ShineBorder shineColor={'green'} borderWidth={1} />
-                            <a href="https://drive.google.com/file/d/1HLhkLIQppSwyg0v70O6hTMaNAaHGDfue/view?usp=drive_link" target="__blacnk">Resume</a>
+                            <a href="https://drive.google.com/drive/folders/1mzt1k6xCQV0X0OUitrnFhdlBXvDkIUhD?usp=drive_link" target="__blacnk">Resume</a>
                         </Button>
                     </div>
                     {/* mobile view button  */}
@@ -83,7 +83,7 @@ const Header = () => {
                             </Button>
                             {/* <Button variant='secondary' className='relative text-left px-4 py-2 cursor-pointer'>
                                 <ShineBorder shineColor={resolvedTheme === "dark" ? "white" : "black"} borderWidth={2} />
-                                <a href="https://drive.google.com/file/d/1HLhkLIQppSwyg0v70O6hTMaNAaHGDfue/view?usp=drive_link" target="__blacnk">Resume</a>
+                                <a href="https://drive.google.com/drive/folders/1mzt1k6xCQV0X0OUitrnFhdlBXvDkIUhD?usp=drive_link" target="__blank">Resume</a>
                             </Button> */}
                         </div>
                     </div>
