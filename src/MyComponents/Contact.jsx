@@ -61,18 +61,18 @@ const Contact = () => {
 
                 <div className='grid lg:grid-cols-2 gap-16 items-center'>
 
-                    <div className='mx-5'>
-                        <div className='mx-5'>
+                    <div className='mx-5 text-center md:text-left'>
+                        <div className='md:mx-5'>
                             <h3 className='text-2xl font-bold mb-4'>
                                 Let's Connect
                             </h3>
-                            <p className='text-lg text-slate-600 dark:text-slate-200/80  leading-relaxed mb-8'>
+                            <p className='text-sm text-slate-600 dark:text-slate-200/80 leading-relaxed mb-8'>
                                 I'm always excited to discuss new opportunities, collaborate on interesting projects, or simply chat about technology and development.
                             </p>
                         </div>
                         <div className='space-y-6'>
 
-                            {/* <div className="group flex items-center space-x-4 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border  text-slate-600 dark:text-slate-200/80 ">
+                            {/* <div className="group flex items-center space-x-4 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border  text-slate-600 dark:text-slate-200/80 text-left">
                                 <div className="flex-shrink-0 p-3 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 shadow-sm group-hover:shadow-md transition-shadow">
                                     <Mail className="h-5 w-5 text-white" />
                                 </div>
@@ -82,7 +82,7 @@ const Contact = () => {
                                     <p className="text-sm mt-1">Best for detailed discussions</p>
                                 </div>
                             </div> */}
-                            <div className="group flex items-center space-x-4 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border text-slate-600 dark:text-slate-200/80">
+                            <div className="group flex items-center space-x-4 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border text-slate-600 dark:text-slate-200/80 text-left">
                                 <div className="flex-shrink-0 p-3 rounded-lg bg-gradient-to-br from-green-500 to-emerald-600 shadow-sm group-hover:shadow-md transition-shadow">
                                     <Phone className="h-5 w-5 text-white" />
                                 </div>
@@ -93,7 +93,7 @@ const Contact = () => {
                                 </div>
                             </div>
 
-                            <div className="group flex items-center space-x-4 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border  text-slate-600 dark:text-slate-200/80">
+                            <div className="group flex items-center space-x-4 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border  text-slate-600 dark:text-slate-200/80 text-left">
                                 <div className="flex-shrink-0 p-3 rounded-lg bg-gradient-to-br from-purple-500 to-violet-600 shadow-sm group-hover:shadow-md transition-shadow">
                                     <MapPin className="h-5 w-5 text-white" />
                                 </div>

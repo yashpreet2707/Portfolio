@@ -1,3 +1,4 @@
+import Particles from '@/Background/Particles/Particles'
 import { RetroGrid } from '@/components/magicui/retro-grid'
 import { SpinningText } from '@/components/magicui/spinning-text'
 import { Badge } from '@/components/ui/badge'
@@ -21,16 +22,26 @@ const Hero = () => {
     }, [resolvedTheme]);
 
     return (
-        <section id='home' className='py-16'>
-            <div className="absolute h-[900px] sm:h-[700px] w-full overflow-hidden">
-                <RetroGrid />
+        <section id='home'>
+            <div className="absolute h-[1000px] sm:h-[700px] w-full overflow-hidden -z-10">
+                {/* <RetroGrid /> */}
+                <Particles
+                    particleColors={['#808080', '#808080']}
+                    particleCount={400}
+                    particleSpread={8}
+                    speed={0.15}
+                    particleBaseSize={80}
+                    moveParticlesOnHover={false}
+                    alphaParticles={false}
+                    disableRotation={false}
+                />
             </div>
             {/* <div className='hidden lg:inline-block absolute bottom-10 right-20 z-50'>
                 <SpinningText>- - - - - - - - - - - - - - - - - - - - - </SpinningText>
                 <Button className='rounded-full py-11 relative bottom-11 bg-gradient-to-r from-blue-500 to-purple-500 text-white' onClick={() => window.location.href = 'mailto:yashpreet1686@gmail.com'}>HIRE ME</Button>
             </div> */}
             <div className='max-w-7xl mx-auto relative'>
-                <div className='text-center py-20'>
+                <div className='text-center py-16 mt-16'>
                     <div className='flex flex-col items-center'>
                         <img className='w-22' src='./images/emojiSpecs.png' alt='emoji' />
                         <Button variant='primary' className='text-sm border py-1 px-4 font-semibold'><span className='animate-pulse'>🟢</span>Available for new projects</Button>

@@ -2,6 +2,7 @@ import { Code, Database, Globe, User } from 'lucide-react'
 import React from 'react'
 import { Card, CardContent, } from "@/components/ui/card"
 import { Badge } from '@/components/ui/badge';
+import Particles from '@/Background/Particles/Particles';
 
 const About = () => {
 
@@ -24,14 +25,27 @@ const About = () => {
     ]
 
     return (
-        <section id='about' className='py-16 relative'>
-            <div className='max-w-7xl mx-auto'>
+        <section id='about' className='relative'>
+            <div className="absolute h-[1000px] sm:h-[700px] w-full overflow-hidden -z-10">
+                {/* <RetroGrid /> */}
+                <Particles
+                    particleColors={['#808080', '#808080']}
+                    particleCount={400}
+                    particleSpread={8}
+                    speed={0.15}
+                    particleBaseSize={80}
+                    moveParticlesOnHover={false}
+                    alphaParticles={false}
+                    disableRotation={false}
+                />
+            </div>
+            <div className='max-w-7xl mx-auto py-16'>
                 <div className='text-center mb-12 mt-5'>
                     <h2 className='flex justify-center items-center text-3xl md:text-4xl font-bold mb-4'><User style={{ width: "2rem", height: '2rem' }} className='mr-4' />About Me</h2>
                     <p className='px-4 mb-4 text-slate-600 dark:text-slate-200/80 text-sm sm:text-lg md:text-xl'>A passionate computer science student with a keen interest in building innovative solutions</p>
                 </div>
 
-                <div className='grid md:grid-cols-2 gap-12 items-center'>
+                <div className='grid md:grid-cols-2 gap-12 items-center text-center md:text-left'>
                     <div className='p-4'>
                         <h3 className='text-2xl mb-4 font-semibold'>Learn More About Me</h3>
                         <div className='text-slate-600 dark:text-slate-200/80 '>
