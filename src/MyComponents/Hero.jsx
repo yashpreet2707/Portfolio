@@ -48,7 +48,7 @@ const Hero = () => {
                     </div>
                     <h1 className='text-4xl md:text-6xl font-bold my-6'>Hi I'm <span className='bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text '>Yashpreet Singh</span></h1>
                     <p className="text-xl text-slate-600 dark:text-slate-200/80 md:text-2xl mb-6">
-                        Pre-Final Year CS Student & Full Stack Developer
+                        Final Year CS Student & Full Stack Developer
                     </p>
                     <p className="text-lg text-slate-600 dark:text-slate-200/80 max-w-2xl mx-auto mb-8 px-2">
                         Passionate about building scalable, high-performance web applications and exploring cloud technologies. Currently pursuing
